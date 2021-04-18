@@ -22,5 +22,11 @@ namespace DuckSim
         {
             Console.WriteLine("Display!");
         }
+
+        // Adding this here is a problem as all subclasses will inherit fly.
+        public void Fly()
+        {
+            Console.WriteLine("Fly!");
+        }
     }
 }
