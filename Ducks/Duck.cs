@@ -1,16 +1,21 @@
-﻿using System;
+﻿using DuckSim.Ducks.Behaviours.Fly;
+using DuckSim.Ducks.Behaviours.Quack;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DuckSim
+namespace DuckSim.Ducks
 {
-    class Duck
+    public abstract class Duck
     {
+        public IFlyBehaviour flyBehaviour { get; set; }
+        public IQuackBehaviour quackBehaviour { get; set; }
+
         public void Quack()
         {
-            Console.WriteLine("Quack!");
+            quackBehaviour.Quack();
         }
 
         public void Swim()
@@ -26,7 +31,7 @@ namespace DuckSim
         // Adding this here is a problem as all subclasses will inherit fly.
         public void Fly()
         {
-            Console.WriteLine("Fly!");
+            flyBehaviour.Fly();
         }
     }
 }
