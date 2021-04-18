@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DuckSim
+namespace DuckSim.Ducks.Behaviours.Quack
 {
-    class RubberDuck : Duck
+    class Squeak : IQuackBehaviour
     {
-        public new void Display()
+        public void Quack()
         {
-            Console.WriteLine("Display Rubber Duck!");
+            Console.WriteLine("Squeak!");
         }
     }
 }

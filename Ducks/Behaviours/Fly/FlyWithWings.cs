@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DuckSim
+namespace DuckSim.Ducks.Behaviours.Fly
 {
-    class RedheadDuck : Duck
+    class FlyWithWings : IFlyBehaviour
     {
-        public new void Display()
+        public void Fly()
         {
-            Console.WriteLine("Display Redhead!");
+            Console.WriteLine("Fly with wings!");
         }
     }
 }
