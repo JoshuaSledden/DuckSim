@@ -26,6 +26,10 @@ We need to implement the new functionality in a way that is flexible at runtime 
 
 As a result we now have a class/subclass structure that is runtime dynamic with little code re-use and less side effects when we go in to add or edit function.
 
+### Additional points of learning
+There would be an additional level of improvement that could be made where we remove setting a new concrete behaviour type to the duck on its initialisation.
+This would allow it to be more dynamic when creating new ducks.
+
 ## References
 https://www.amazon.co.uk/Head-First-Design-Patterns-Object-Oriented/dp/149207800X/
 https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
